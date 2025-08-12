@@ -1,0 +1,47 @@
+[project]
+name = "ios-control"
+version = "0.1.0"
+description = "A Python library for controlling iOS devices programmatically"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pymobiledevice3>=4.0.0",
+    "ruff>=0.12.8",
+]
+authors = [
+    {name = "Your Name", email = "your.email@example.com"}
+]
+keywords = ["ios", "iphone", "ipad", "device", "control", "automation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: System :: Hardware",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=23.0.0",
+    "flake8>=6.0.0",
+    "mypy>=1.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/import1bones/ios-control"
+Repository = "https://github.com/import1bones/ios-control"
+Issues = "https://github.com/import1bones/ios-control/issues"
+
+[project.scripts]
+ios-control = "ios_control.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
